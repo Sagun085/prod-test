@@ -1,18 +1,14 @@
 <template>
   <div id="app">
-    {{ message }}
+    {{ message.msg }}
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import new_data from "../services/data-service"
 
 export default {
   name: 'App',
-  components: {
-    // HelloWorld
-  },
   data() {
     return {
       message: new_data
